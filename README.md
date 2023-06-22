@@ -1,38 +1,75 @@
-# create-svelte
+# Backend Bookkeeping (BEBK)
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Backend Bookkeeping (BEBK) is a web application designed to help with scheduling appointments and bookkeeping tasks. The project is built using Svelte and Vite, and it uses Mongoose for database management, bcrypt for password hashing, and JSON Web Tokens (JWT) for authentication.
 
-## Creating a project
+## Getting Started
 
-If you're seeing this, you've probably already done this step. Congrats!
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+### Prerequisites
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+- Node.js
+- npm
 
-## Developing
+### Installation
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+1. Clone the repo
+   ```sh
+   git clone https://github.com/QdotD/Backend-Bookkeeping.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
 
-```bash
+## Usage
+
+To run the application in development mode, use the following command:
+
+```sh
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+To build the application for production, use the following command:
 
-To create a production version of your app:
-
-```bash
+```sh
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+To start the application (after building it), use the following command:
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+```sh
+npm run start
+```
+
+To preview the application, use the following command:
+
+```sh
+npm run preview
+```
+
+## Linting and Formatting
+
+This project uses ESLint and Prettier for linting and formatting. To check the code for any linting errors, use the following command:
+
+```sh
+npm run lint
+```
+
+To format the code, use the following command:
+
+```sh
+npm run format
+```
+
+## Built With
+
+- [Svelte](https://svelte.dev/)
+- [Vite](https://vitejs.dev/)
+- [Mongoose](https://mongoosejs.com/)
+- [bcrypt](https://www.npmjs.com/package/bcrypt)
+- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
